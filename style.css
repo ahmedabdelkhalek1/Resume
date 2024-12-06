@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+}
+header {
+  background: url('images/background.jpg') no-repeat center center; /* Adjust the path if necessary */
+  background-size: cover; /* This will make the background image cover the entire header */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+header h1, header h2, .custom-text {
+  color: white; /* Change text color to white for better visibility */
+  text-shadow: 
+    1px 1px 0 rgba(0, 0, 0, 0.7),   /* Right bottom */
+    -1px -1px 0 rgba(0, 0, 0, 0.7), /* Left top */
+    1px -1px 0 rgba(0, 0, 0, 0.7),  /* Right top */
+    -1px 1px 0 rgba(0, 0, 0, 0.7);  /* Left bottom */
+  margin: 0;
+}
+nav ul {
+  list-style: none;
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+a { /* This targets all anchor tags */
+  color: white; /* Change link color to white */
+  text-decoration: none; /* Remove underline from links */
+}
+
+a:hover { /* Optional: Change color on hover for better UX */
+  color: #ccc; /* Light gray color on hover */
+}
+main {
+  padding: 20px;
+}
+section {
+  margin-bottom: 30px;
+  padding-bottom: 20px; /* Add some padding to the bottom */
+  border-bottom: 2px solid #ccc; /* Add a light gray border */
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background: #333;
+  color: white;
+}
