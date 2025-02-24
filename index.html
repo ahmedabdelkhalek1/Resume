@@ -6,14 +6,19 @@
   <title>Ahmed Abdelkhalek - Resume</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="container">
-      <img src="https://media.licdn.com/dms/image/v2/D4E03AQH6x4Ndo9KyqA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718217851673?e=1738800000&v=beta&t=_JfUzIZ7RkI1rrE9pxJL9NhBV9W9Lz1sHZe6mqMfGbs" alt="LinkedIn Profile Picture" style="width: 100px; height: auto; border-radius: 50%;">
+      <img src="images/profile-pic.png" alt="Profile Picture" style="width: 100px; height: auto; border-radius: 25%;">
       <h1>Ahmed Abdelkhalek Hassanien</h1>
       <h2>Cloud Engineer</h2>
+      <p class="custom-text1">GCP | Kubernetes | OpenStack | Multi Cloud | DevOps   </p>
       <p class="custom-text">Cairo, Egypt | <i class="fas fa-phone"></i> +201140005146 | <a href="https://wa.me/201140005146" target="_blank"><i class="fab fa-whatsapp"></i></a> | <a href="https://www.linkedin.com/in/ahmedabdelkhaleq/" target="_blank"><i class="fab fa-linkedin"></i></a> | <a href="mailto:eng.ahmed7007@gmail.com">eng.ahmed7007@gmail.com</a></p>
+      <a href="AhmedAbdelkhalek-CV-ex.pdf" download="AhmedAbdelkhalek-CV.pdf" class="cta">Download My CV</a>
+   
     </div>
   </header>
   <nav>
@@ -36,8 +41,23 @@
   <section id="experience">
     <h2>Experience</h2>
       <div class="job">
+        <h3>Deloitte. | Senior Cloud Consultant</h3>
+        <p><strong>Sep 2024 – Current</strong></p>
+        <ul>
+          <li>Developed serverless web application using App Engine and Cloud Functions, demonstrating proficiency in cloud-native development.</li>
+          <li>Assisted in migrating departmental applications to Google Cloud, gaining practical experience in lift-and-shift and re-architecting strategies.</li>
+          <li>Contributed to cloud cost optimization efforts by utilizing Cloud Billing reports and cost management tools.</li>
+          <li>Participated in cloud security workshops and implemented basic security best practices in test environments.</li>
+          <li>Automated infrastructure deployment using Terraform and Google Cloud Deployment Manager, reducing manual configuration time by almost 75%.</li>
+          <li>Implemented continuous integration and continuous deployment (CI/CD) pipelines using and GitHub Actions.</li>
+          <li>Containerized legacy applications using Docker and migrated to Google Kubernetes Engine, improving scalability, and reducing infrastructure complexity.</li>
+          <li>Developed monitoring and alerting solutions using (Cloud Monitoring), enabling proactive issue detection, and reducing mean time.</li>
+          <li>Created serverless data processing workflows using Cloud Functions and Pub/Sub, handling over 1 million events per day with 99.9% reliability.</li>
+        </ul>
+      </div>
+      <div class="job">
         <h3>Ericsson | Cloud Engineer</h3>
-        <p><strong>March 2020 – Present</strong></p>
+        <p ><strong>March 2020 – Sep 2024</strong></p>
         <ul>
           <li>Conducted over 40+ technical presentations, effectively communicating complex technical concepts and solutions to both technical and non-technical customer stakeholders, resulting in a significant increase up to 50% in client understanding and satisfaction.</li>
           <li>Provided detailed technical documentation, authored 15+ comprehensive technical documents and user guides, facilitating smooth project execution and client onboarding, reducing support tickets by 25%.</li>
@@ -55,8 +75,9 @@
           <li>Familiarity with monitoring frameworks such as Data Dog, Grafana, Prometheus, and Dynatrace.</li>
           <li>Advanced knowledge in Linux system administration, working across the entire Linux stack from kernel, networking, storage, to applications.</li>
           <li>Practical understanding of network fundamentals (DNS, DHCP, TCP/IP, routing, switching, HTTP) and good troubleshooting skills at all levels.</li>
-          <strong><img src="images/trophy.png" alt="Winning Cup" style="width: 30px;height:auto;">Projects Management and Achievements:
-            
+          <strong style="display: inline-block; vertical-align: middle; margin-left: -30px;">
+            <img src="images/trophy.png" alt="Winning Cup" style="width: 30px;height:auto;vertical-align: baseline ;">
+            <span style="vertical-align: super;">Projects Management and Achievements:</span>
           </strong>
           <li>Successfully implemented NFVI environments for TE and Etisalat-Misr, receiving customer appreciation for dedication and prompt support.</li>
           <li>Expanded multiple Clusters (Kubernetes) and NFVI for customers in Egypt and the Gulf, managing both hardware and software.</li>
@@ -195,6 +216,7 @@
   </main>
   <footer>
     <p>© 2024 Ahmed Abdelkhalek. All rights reserved.</p>
+    <p><span id="visitor-counter"></span></p>
   </footer>
   <script src="script.js"></script>
 </body>

@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -21,6 +21,23 @@ header h1, header h2, .custom-text {
     -1px -1px 0 rgba(0, 0, 0, 0.7), /* Left top */
     1px -1px 0 rgba(0, 0, 0, 0.7),  /* Right top */
     -1px 1px 0 rgba(0, 0, 0, 0.7);  /* Left bottom */
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+header .custom-text1 {
+  color: white; /* Change text color to white for better visibility */
+  text-shadow: 
+    1px 1px 0 rgba(0, 0, 0, 0.7),   /* Right bottom */
+    -1px -1px 0 rgba(0, 0, 0, 0.7), /* Left top */
+    1px -1px 0 rgba(0, 0, 0, 0.7),  /* Right top */
+    -1px 1px 0 rgba(0, 0, 0, 0.7);  /* Left bottom */
+    padding: 0;
+    border: 2px solid white; /* White border */
+
+    border-radius: 8px; /* Optional: rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: slight background color for contrast */
+
   margin: 0;
 }
 nav ul {
@@ -49,15 +66,69 @@ a:hover { /* Optional: Change color on hover for better UX */
 main {
   padding: 20px;
 }
+
 section {
+  background-color: #f0f0f0; /* Light gray (adjust as needed) */
+  padding: 20px; /* Add padding for better spacing */
+  margin: 10px 0; /* Add margin to separate sections */
+  border-radius: 8px; /* Optional: Add rounded corners */
   margin-bottom: 30px;
   padding-bottom: 20px; /* Add some padding to the bottom */
   border-bottom: 2px solid #ccc; /* Add a light gray border */
 }
+
 
 footer {
   text-align: center;
   padding: 3px;
   background: #333;
   color: white;
+}
+
+
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.job {
+  margin-bottom: 50px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.job ul {
+  list-style: square;
+  padding: 0;
+  margin: 0;
+}
+
+.job li {
+  margin-bottom: 10px;
+}
+.cta {
+  position: fixed;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+
 }
